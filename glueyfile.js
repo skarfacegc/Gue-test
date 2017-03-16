@@ -8,3 +8,10 @@ glue.task('coverage', () => {
       console.log(output);
     });
 });
+
+glue.task('fail', () => {
+  return glue.shell('typo')
+    .then((output) => {
+      console.log(output);
+    });
+})
