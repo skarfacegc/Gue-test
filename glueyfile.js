@@ -10,4 +10,4 @@ glue.task('coverage', () => {
 
 glue.task('fail', () => {
   return glue.shell('typo');
-})
+});
