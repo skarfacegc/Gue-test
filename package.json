@@ -1,5 +1,5 @@
 {
-  "name": "gluey-test",
+  "name": "gue-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,12 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
-    "gluey": "^0.0.2",
     "mocha": "^3.2.0",
     "nyc": "^10.1.2",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "gue": "^0.0.3"
   }
 }

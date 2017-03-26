@@ -1,3 +1,3 @@
-Sample project to test [gluey](https://github.com/skarfacegc/Gluey)
+Sample project to test [gue](https://github.com/skarfacegc/Gue)
 
 
