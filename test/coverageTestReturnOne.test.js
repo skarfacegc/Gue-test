@@ -9,10 +9,10 @@ chai.use(sinonChai);
 const CoverageTest = require('../src/coverageTest');
 
 describe('coverageTest', () => {
-  describe('constructor', () => {
-    it('should set testProp', () => {
+  describe('returnOne', () => {
+    it('should return one', () => {
       const ct = new CoverageTest();
-      expect(ct.testProp).to.equal('Hello There');
+      expect(ct.returnOne()).to.equal(1);
     });
   });
 });

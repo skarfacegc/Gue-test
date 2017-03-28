@@ -3,7 +3,7 @@ class coverageTest {
     this.testProp = 'Hello There';
   }
 
-  returnOne(){
+  returnOne() {
     return 1;
   }
 }
