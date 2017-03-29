@@ -18,7 +18,7 @@ describe('coverageTest', () => {
 
   describe('returnOne fail', ()=> {
     it('this test should fail', () => {
-      const ct = new CoveageTest();
+      const ct = new CoverageTest();
       expect(ct.returnOne()).to.equal(0);
     });
   });
