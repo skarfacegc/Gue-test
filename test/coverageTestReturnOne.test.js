@@ -15,4 +15,11 @@ describe('coverageTest', () => {
       expect(ct.returnOne()).to.equal(1);
     });
   });
+
+  describe('returnOne fail', ()=> {
+    it('this test should fail', () => {
+      const ct = new CoveageTest();
+      expect(ct.returnOne()).to.equal(0);
+    });
+  });
 });
