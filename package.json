@@ -16,6 +16,6 @@
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {
-    "gue": "^0.0.3"
+    "gue": "^0.0.5"
   }
 }
