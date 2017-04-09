@@ -13,9 +13,16 @@ gue.task('coverage', () => {
 });
 
 gue.task('fail', () => {
-  return gue.shell('typo');
+  return gue.shell('node -e \'console.error("This is stderr")\' && exit 1');
 });
 
 gue.task('watch', ()=> {
   gue.watch(gue.options.watchFiles, ['coverage', 'fail']);
+});
+
+// This is used by the gue integration test to generate the snapshot we
+// compare against
+gue.task('snapshotTest', ['mochaJson','fail']);
+gue.task('mochaJson', () => {
+  return gue.shell('mocha -R tap {{testFiles}}');
 });
