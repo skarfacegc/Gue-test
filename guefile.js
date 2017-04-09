@@ -16,4 +16,6 @@ gue.task('fail', () => {
   return gue.shell('typo');
 });
 
-gue.watch(gue.options.watchFiles, ['coverage', 'fail']);
+gue.task('watch', ()=> {
+  gue.watch(gue.options.watchFiles, ['coverage', 'fail']);
+});
